@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>About us</title>
+    <style>
+        #navigation-style {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul id="navigation-style">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="order.html">Order Form</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="about.html">About us</a></li>
+    </ul>
+    <h1>Contact Us!</h1>
+    <h3>
+        <p>Have any questions or need assistance? Get in touch with us using the form below or via our email/phone
+            number.</p>
+    </h3>
+    <form action="thankyou.html" method="get">
+        <label for="custname">Your name:</label>
+        <br>
+        <input type="text" name="custname" id="custname" size="30">
+        <p>
+        <label for="email">E-mail:</label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="you@example.com" required>
+        <p>Message:<br>
+        <textarea name="notes" id="notes" rows="4" cols="40">
+</textarea>
+        </textarea>
+        <p><input type="submit" value="Submit form">
+            <input type="reset" value="Clear Form">
+        </p>
+    </form>
+    <hr />
+    <h3>Other Ways to Reach Us</h3>
+    <p><strong>Email:</strong> JJPLV@gmail.com</p>
+    <p><strong>Phone number:</strong> 12345678</p>
+    <p><strong>Location:</strong> 180 Ang Mo Kio Ave 8, Singapore 569830</p>
+    <div class="map-wrapper">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.661177583525!2d103.84637377530869!3d1.379955361477638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da16eb64b0249d%3A0xe5f10ff680eed942!2sNanyang%20Polytechnic!5e0!3m2!1sen!2ssg!4v1783321554643!5m2!1sen!2ssg"
+            width="100%" height="100%" style="border:0; min-height: 350px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+    </div>
+</body>
+
+</html>
