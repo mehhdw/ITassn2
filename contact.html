@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <title>About us</title>
     <style>
-       
         :root {
             --cream: #F9F8F3;
             --teal: #183D43;
@@ -13,7 +12,7 @@
             --gold: #C2A878;
         }
 
-      
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: var(--cream);
@@ -29,14 +28,14 @@
             padding: 40px 20px;
         }
 
-       
+
         nav {
             background-color: var(--teal);
             padding: 15px;
             text-align: center;
             border-radius: 8px;
             margin-bottom: 40px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
@@ -52,9 +51,8 @@
         nav a:hover {
             color: var(--gold);
         }
-</style> 
- <div class="container">
-        
+    </style>
+    <div class="container">
         <nav>
             <a href="home page.html">Home</a>
             <a href="products.html">Product</a>
@@ -65,39 +63,48 @@
 </head>
 
 <body>
-    <h1>Contact Us!</h1>
+
+    <h1><u>Contact Us!</u></h1>
     <h3>
         <p>Have any questions or need assistance? Get in touch with us using the form below or via our email/phone
             number.</p>
     </h3>
-    <form action="thankyou.html" method="get">
-        <label for="custname">Your name:</label>
-        <br>
-        <input type="text" name="custname" id="custname" size="30">
-        <p>
-            <label for="email">E-mail:</label>
+    <div
+        style="border: 8px double #333; padding: 30px; width: 400px; margin: 20px auto; font-family: sans-serif; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        <form action="thankyou.html" method="get">
+            <h3>Contact Us!</h3>
+            <label for="custname">Your name:</label>
             <br>
-            <input type="email" name="email" id="email" placeholder="you@example.com" required>
-        <p>Message:<br>
-            <textarea name="notes" id="notes" rows="4" cols="40">
+            <input type="text" name="custname" id="custname" size="30">
+            <p>
+                <label for="email">E-mail:</label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="you@example.com" required>
+            <p>Message:<br>
+                <textarea name="notes" id="notes" rows="4" cols="40">
 </textarea>
-            </textarea>
-        <p><input type="submit" value="Submit form">
-            <input type="reset" value="Clear Form">
-        </p>
+                </textarea>
+            <p><input type="submit" value="Submit form">
+                <input type="reset" value="Clear Form">
+            </p>
+    </div>
     </form>
     <hr />
-    <h3>Other Ways to Reach Us</h3>
+    <h2><u>Other Ways to Reach Us</u></h2>
+    <h4>
     <p><strong>Email:</strong> JJPLV@gmail.com</p>
     <p><strong>Phone number:</strong> 12345678</p>
-    <p><strong>Location:</strong> 180 Ang Mo Kio Ave 8, Singapore 569830</p>
-    <div class="map-wrapper">
+    <p><strong>Location:</strong>
+        <a href="https://www.google.com/maps/place/Nanyang+Polytechnic/@1.3799554,103.8463738,17z/data=!3m2!4b1!5s0x31da1443e96b94d1:0x87e3c8bf1134a0df!4m6!3m5!1s0x31da16eb64b0249d:0xe5f10ff680eed942!8m2!3d1.37995!4d103.8489487!16zL20vMDN4Njkz?entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank"
+            style="color: #0066cc; text-decoration: underline;">
+            180 Ang Mo Kio Ave 8, Singapore 569830
+    </p></a>
+   <div style="border: 5px solid #333; padding: 15px; width: 1000px; margin: 20px auto; font-family: sans-serif; box-shadow: 0 4px 10px rgba(0,0,0,0.1); box-sizing: border-box;">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.661177583525!2d103.84637377530869!3d1.379955361477638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da16eb64b0249d%3A0xe5f10ff680eed942!2sNanyang%20Polytechnic!5e0!3m2!1sen!2ssg!4v1783321554643!5m2!1sen!2ssg"
             width="100%" height="100%" style="border:0; min-height: 350px;" allowfullscreen="" loading="lazy"
             referrerpolicy="strict-origin-when-cross-origin">
-        </iframe>
-    </div>
+        </iframe></h4></div>
 </body>
 
 </html>
