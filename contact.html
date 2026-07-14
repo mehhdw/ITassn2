@@ -5,25 +5,66 @@
     <meta charset="utf-8">
     <title>About us</title>
     <style>
-        #navigation-style {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            gap: 20px;
+       
+        :root {
+            --cream: #F9F8F3;
+            --teal: #183D43;
+            --green: #2e5a57;
+            --gold: #C2A878;
         }
-    </style>
+
+      
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--cream);
+            color: var(--teal);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+       
+        nav {
+            background-color: var(--teal);
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: var(--cream);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+</style> 
+ <div class="container">
+        
+        <nav>
+            <a href="home page.html">Home</a>
+            <a href="products.html">Product</a>
+            <a href="order form.html">Order Form</a>
+            <a href="about us.html">About Us</a>
+            <a href="contact us.html">Contact Us</a>
+        </nav>
 </head>
 
 <body>
-
-    <ul id="navigation-style">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="order.html">Order Form</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="about.html">About us</a></li>
-    </ul>
     <h1>Contact Us!</h1>
     <h3>
         <p>Have any questions or need assistance? Get in touch with us using the form below or via our email/phone
@@ -34,13 +75,13 @@
         <br>
         <input type="text" name="custname" id="custname" size="30">
         <p>
-        <label for="email">E-mail:</label>
-        <br>
-        <input type="email" name="email" id="email" placeholder="you@example.com" required>
+            <label for="email">E-mail:</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="you@example.com" required>
         <p>Message:<br>
-        <textarea name="notes" id="notes" rows="4" cols="40">
+            <textarea name="notes" id="notes" rows="4" cols="40">
 </textarea>
-        </textarea>
+            </textarea>
         <p><input type="submit" value="Submit form">
             <input type="reset" value="Clear Form">
         </p>
