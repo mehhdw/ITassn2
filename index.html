@@ -5,25 +5,269 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+   
+
      <style>
-        #navigation-style{
+        :root {
+            --cream: #F9F8F3;
+            --teal: #183D43;
+            --green: #2e5a57;
+            --gold: #C2A878;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--cream);
+            color: var(--teal);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #ffffff;
+            border-radius: 16px;  
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+       
+        nav { 
+            background-color: var(--teal);
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: var(--cream);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        
+        .header {
             display:flex;
-            list-style:none;
-            padding:0;
-            margin:0;
-            gap:20px}
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #f0ebe6;
+            margin-bottom: 15px;
+        }
+
+        .header img {
+            width: 100px;
+            border-radius: 12px;
+        }
+
+        .welcome {
+             border: 2px solid var(--gold);
+        }
+
+
+        table {
+            width: 100%;
+            border-spacing: 0;
+            border-collapse: separate;
+            margin: 20px auto 0 auto;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        th {
+            background-color: var(--teal);
+            color: white;
+            padding: 14px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        td {
+            padding: 14px;
+            text-align: center;
+            border: 1px solid var(--border);
+            font-size: 17px;
+        }
+        
+        tr:hover td {
+            background-color: #f1ede8;
+        }
+
+
+        section {
+            max-width: 850px;
+            margin: 10px auto 10px;
+            padding: 25px 30px;
+            background-color: #f1f0ee;
+            border-radius: 12px;
+            box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+        }
+        
+        .product {
+            display:flex;
+            justify-content:center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .products{
+            flex: 1;
+            min-width: 130px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            background-color: #f0ebe6;
+            padding: 25px 15px;
+            border-radius: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            font-size: 20px;
+            font-weight: 500;
+            color: #2c3e50;
+            text-align: center;
+            transition: 0.3s ease;
+        }
+
+        .products:hover {
+            background-color: #2c3e50;
+            color: white;
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+            transform: scale(1.1)
+        }
+
+        .products.icon {
+            display:block;
+            font-size: 10px;
+        }
+
+        .promise{
+            display:flex
+        }
     </style>
+        
+
 </head>
 <body>
-    <h1>Welcome to JJ PLV</h1>
-    <ul    id="navigation-style">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="product.html">Product</a></li>
-        <li><a href="order.html">Order Form</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="about.html">About us</a></li>
-    </ul>
+    <div class="container">
 
-    
+        <div class="header">
+          <img src="imagesass2/logo.jpg" alt="JJ PLV Stationery Logo" width="110">
+          <h1>JJ PLV Stationery 📚✏️</h1>
+        </div>
+      
+        <nav>
+        <a href="index.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="order.html">Order Form</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About us</a>
+        </nav>
+       
+ 
+   
+    <section>
+        <h1>✨Welcome to JJ PLV Stationery</h1>
+        <p> At JJ PLV, we provide a wide range of high-quality stationery items at affordable prices!! 
+            Whether you are a student, teacher, or office worker, you will find everything you need here.
+        </p>
+    </section>
+    <section>
+        <h2>Why choose us?</h2>
+         <table>
+        <tr>
+            <th>Benefit</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Premium Quality</td>
+            <td>Trusted brands, built to last.</td>
+        </tr>
+        <tr>
+            <td>Affordable Pricing</td> 
+            <td>Student discounts, bulk deals & regular promos.</td>
+        </tr>
+        <tr>
+            <td>Fast Delivery</td>
+            <td>Same-day before 2pm. Free shipping above $50.</td>
+        </tr>
+        <tr>
+            <td>Eco-Friendly</td>
+            <td>Every purchase helps reduce plastic waste.</td>
+        </tr>
+        <tr>
+            <td>Love It or Return It</td>
+            <td>30-day hassle-free returns. No questions asked.</td>
+        </tr>
+    </table>
+    </section>
+
+       <section>
+        <h2>🔥 Our Bestsellers</h2>
+        <div class="product">
+                <div class="products">
+                    <span class="icon">🖊️</span>
+                    Ballpoint Pen Set
+                </div>
+                <div class="products">
+                    <span class="icon">📓 </span>
+                    Exercise Book
+                </div>
+                <div class="products">
+                     <span class="icon">🟡</span>
+                     Highlighter Pack
+                </div>
+                <div class="products">
+                    <span class="icon">🧴</span>
+                    Glue Stick and Tape
+                </div>
+                <div class="products">
+                    <span class="icon">🧴</span>
+                    File Organizers
+                </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>💚Our Promises</h2>
+        <div class="promise">
+                <div>
+                    <p>Quality First</p>
+                    <p>All products checked before sale</p>
+                </div>
+                <div>
+                    <p>Fair Price</p>
+                    <p>No hidden fees,regular discounts</p>
+                </div>
+                <div>
+                    <p>Eco-Friendly</p>
+                    <p>Recycle and low-waste options</p>
+                </div>
+                <div>
+                    <p>Helpful Service</p>
+                    <p>Happy to answer your questions</p>
+                </div>
+    </div>
+    </section>
+
+
+    <section>
+        <a href="product.html">Skip to Next Page </a>
+    </section>
+    </div>
+
 </body>
 </html>
