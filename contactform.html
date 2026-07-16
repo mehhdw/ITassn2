@@ -4,26 +4,64 @@
 <head>
     <meta charset="utf-8">
     <title>About us</title>
-    <style>
-        #navigation-style {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            gap: 20px;
+   <style>
+       
+        :root {
+            --cream: #F9F8F3;
+            --teal: #183D43;
+            --green: #2e5a57;
+            --gold: #C2A878;
         }
-    </style>
-</head>
 
-<body>
+      
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--cream);
+            color: var(--teal);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
 
-    <ul id="navigation-style">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="order.html">Order Form</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="about.html">About us</a></li>
-    </ul>
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+       
+        nav {
+            background-color: var(--teal);
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: var(--cream);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+</style> 
+ <div class="container">
+        
+        <nav>
+            <a href="home page.html">Home</a>
+            <a href="products.html">Product</a>
+            <a href="order form.html">Order Form</a>
+            <a href="about us.html">About Us</a>
+            <a href="contact us.html">Contact Us</a>
+        </nav>
     <h1>Thank you for filling out the form.</h1>
     <a href="contact.html">
         <button type="button">Back</button>
