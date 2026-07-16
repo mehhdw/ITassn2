@@ -7,40 +7,182 @@
     <title>Order Form</title>
 </head>
 <body>
-    <body style="background-color: #e0d0be; 
+    <body style="background-color: #f9f8f3; 
     font-family: 
     Arial, sans-serif; 
     margin: 20px;">
 
- <style>
-        #navigation-style {
+    <style>
+
+        section {
+            max-width: 850px;
+            margin: 10px auto 10px;
+            padding: 25px 30px;
+            background-color: #f1f0ee;
+            border-radius: 12px;
+            box-shadow: 1 1px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .header {
             display: flex;
-            list-style: none;
-            padding: 0;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #f0ebe6;
+            margin-bottom: 15px;
+        }
+
+        .header img{
+            width: 100px;
+            border-radius: 12px;
+        }
+
+        :root {
+            --cream: #F9F8F3;
+            --teal: #2d3a3f;
+            --green: #2e5a57;
+            --gold: #C2A878;
+            --black: #283824;
+        }
+
+      
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--cream);
+            color: var(--black);
             margin: 0;
-            gap: 20px}
-    </style>     
-     
-<h1>Products:</h1>
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+       
+        nav {
+            background-color: var(--teal);
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: var(--cream);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+    </style> 
+    
+      <div class="header">
+          <img src="jjplv logo.jpeg" alt="JJ PLV Stationery Logo" width="110">
+          <h1>JJ PLV Stationery 📚✏️</h1>
+        </div>
+        
+<div class="container">
+        
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="product.html">Product</a>
+            <a href="order.html">Order Form</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+ <h1>Order:</h1>
 
 <!-- order form, enquires, and feedback form need to collect user info -->
+    <section>
+        <form>
+            <label for="custname">Your Name:</label>
+            <br>
+            <input type="text" name="custname"
+            id="custname" size="30">
 
-<form>
- <label for="custname">Your Name:</label>
- <br>
- <input type="text" name="custname"
-  id="custname" size="30">
- <form action="index.html" method="get">
-
-  <input type="submit" value="Order"> 
-</form>
-     
-<ul id="navigation-style">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="products.html">Products</a></li>
-  <li><a href="order.html">Order Form</a></li>
-  <li><a href="contact.html">Contact Us</a></li>
-  <li><a href="About us.html">About Us</a></li>
+            <form action="index.html" method="get">
  
+            
+
+        <div class="product-row">
+                <label for="bps_qty">
+                    <input type="checkbox" name="bps_selected" value="Ballpoint Pen Set"> Ballpoint Pen Set ($3)
+                </label>
+                <input type="number" id="bps_qty" name="bps_qty" min="0" value="0">
+            </div>
+
+            <div class="product-row">
+                <label for="eb_qty">
+                    <input type="checkbox" name="eb_selected" value="Excercise Book"> Excercise Book ($2.50)
+                </label>
+                <input type="number" id="eb_qty" name="eb_qty" min="0" value="0">
+            </div>
+
+            <div class="product-row">
+                <label for="hp_qty">
+                    <input type="checkbox" name="hp_selected" value="Highlighter Pack"> Highlighter Pack ($3)
+                </label>
+                <input type="number" id="hp_qty" name="hp_qty" min="0" value="0">
+            </div>
+
+             <div class="product-row">
+                <label for="gsts_qty">
+                    <input type="checkbox" name="gsts_selected" value="Glue Stick and Tape Set"> Glue Stick and Tape Set ($2.50)
+                </label>
+                <input type="number" id="gsts_qty" name="gsts_qty" min="0" value="0">
+            </div>
+
+             <div class="product-row">
+                <label for="fo_qty">
+                    <input type="checkbox" name="fo_selected" value="File Organisers"> File Organisers ($2)
+                </label>
+                <input type="number" id="fo_qty" name="fo_qty" min="0" value="0">
+            </div>
+
+       <p>Special requests:</p>
+
+        <textarea name="notes" id="notes"
+           rows="4" cols="40">
+        </textarea>
+
+     <input type="submit" value="Order">
+     <input type="reset" value="Clear Form">
+
+    </form>
+</section>
+
+    <h1>Feedback Form</h1>
+    <section>
+        <form>
+            <textarea name="notes" id="notes"
+              rows="4" cols="40">
+            </textarea>
+        </form>
+    </section>
+   
+    <h1>Enquires Form</h1>
+    <section>
+        <form>
+            <textarea name="notes" id="notes"
+              rows="4" cols="40">
+            </textarea>
+        </form>
+    </section>
+
 </body>
 </html>
