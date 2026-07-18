@@ -10,15 +10,16 @@
      <style>
         :root {
             --cream: #F9F8F3;
-            --teal: #183D43;
+            --teal: #2d3a3f;
             --green: #2e5a57;
             --gold: #C2A878;
+            --black:#283824;
         }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: var(--cream);
-            color: var(--teal);
+            color: var(--black);
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -73,7 +74,6 @@
             border-radius: 12px;
         }
 
-       
 
         table {
             width: 100%;
@@ -151,27 +151,37 @@
             font-size: 10px;
         }
 
-        .promise{
-            display:flex
-        }
+       .promises {
+    flex: 1;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    padding: 25px 15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    }
+
     </style>
         
 
 </head>
 <body>
-    <div class="container">
-
-        <div class="header">
-          <img src="jjplv logo.jpeg" alt="JJ PLV Stationery Logo" width="110">
+    <div class="header">
+          <img src="imagesass2/logo.jpg" alt="JJ PLV Stationery Logo" width="110">
           <h1>JJ PLV Stationery 📚✏️</h1>
         </div>
-      
+
+    <div class="container">
         <nav>
         <a href="index.html">Home</a>
         <a href="product.html">Product</a>
         <a href="order.html">Order Form</a>
         <a href="contact.html">Contact Us</a>
-        <a href="About.html">About us</a>
+        <a href="about.html">About us</a>
         </nav>
        
  
@@ -229,7 +239,7 @@
                 </div>
                 <div class="products">
                     <span class="icon">🧴</span>
-                    Glue Stick and Tape
+                    Glue Stick and Tape Set
                 </div>
                 <div class="products">
                     <span class="icon">🧴</span>
@@ -241,20 +251,20 @@
     <section>
         <h2>💚Our Promises</h2>
         <div class="promise">
-                <div>
-                    <p>Quality First</p>
+                <div class="promises">
+                    <p class="promises1">Quality First</p>
                     <p>All products checked before sale</p>
                 </div>
-                <div>
-                    <p>Fair Price</p>
+                <div class="promises">
+                    <p class="promises1">Fair Price</p>
                     <p>No hidden fees,regular discounts</p>
                 </div>
-                <div>
-                    <p>Eco-Friendly</p>
+                <div class="promises">
+                    <p class="promises1">Eco-Friendly</p>
                     <p>Recycle and low-waste options</p>
                 </div>
-                <div>
-                    <p>Helpful Service</p>
+                <div class="promises">
+                    <p class="promises1">Helpful Service</p>
                     <p>Happy to answer your questions</p>
                 </div>
     </div>
