@@ -89,37 +89,48 @@
         nav a:hover {
             color: var(--gold);
         }
+
+    
     </style> 
     
       <div class="header">
           <img src="jjplv logo.jpeg" alt="JJ PLV Stationery Logo" width="110">
           <h1>JJ PLV Stationery 📚✏️</h1>
-        </div>
+           </div>
         
 <div class="container">
         
         <nav>
             <a href="index.html">Home</a>
-            <a href="products.html">Product</a>
+            <a href="product.html">Product</a>
             <a href="order.html">Order Form</a>
-            <a href="About.html">About Us</a>
+            <a href="about.html">About Us</a>
             <a href="contact.html">Contact Us</a>
         </nav>
- <h1>Order:</h1>
+ <h1>Order Form</h1>
+ <p>Please select your preferred products from the selection below!</p>
 
 <!-- order form, enquires, and feedback form need to collect user info -->
     <section>
         <form>
-            <label for="custname">Your Name:</label>
-            <br>
-            <input type="text" name="custname"
-            id="custname" size="30">
+           <div class="input-row">
+            <div class="input-group">
+                <label>Your Name:</label>
+                <br>
+                 <input type="text" name="custname"
+                id="custname" size="30">
+            </div>
+            <div class="input-group">
+                <label for="email">Your Email Address:</label>
+                <br>
+                <input type="text" name="custemail" id="custemail" size="30">
+            </div> 
 
             <form action="index.html" method="get">
  
             
 
-        <div class="product-row">
+       <div class="product-row">
                 <label for="bps_qty">
                     <input type="checkbox" name="bps_selected" value="Ballpoint Pen Set"> Ballpoint Pen Set ($3)
                 </label>
@@ -156,31 +167,76 @@
 
        <p>Special requests:</p>
 
-        <textarea name="notes" id="notes"
-           rows="4" cols="40">
+        <textarea name="requests" id="requests"
+           rows="8" cols="70">
         </textarea>
 
-     <input type="submit" value="Order">
-     <input type="reset" value="Clear Form">
+     <p><input type="submit" value="Order">
+     <input type="reset" value="Clear Form"></p>
 
     </form>
 </section>
 
     <h1>Feedback Form</h1>
+    <p>Have some suggestions for us? Let us know!</p>
     <section>
         <form>
-            <textarea name="notes" id="notes"
-              rows="4" cols="40">
+          <legend>How would you rate your experience?</legend>
+                <label><input type="radio" name="rating"
+               value="excellent" checked> 😍Excellent
+                </label>
+
+                <label><input type="radio" name="rating" 
+                    value="average"> 😐Average 
+                </label>
+
+                <label><input type="radio" name="rating" 
+                    value="poor"> 😞Poor 
+                </label>
+       
+                <p>What did you like or dislike the most?</p>
+
+            <textarea name="feedback" id="feedback"
+              rows="8" cols="70" display placeholder="Your feedback helps us grow...">
             </textarea>
-        </form>
+
+            <p><input type="submit" value="Submit">
+         <input type="reset" value="Clear Form"></p>
+
+         </form>
+
     </section>
    
     <h1>Enquires Form</h1>
+    <p>Have a question? Ask us!</p>
     <section>
         <form>
-            <textarea name="notes" id="notes"
-              rows="4" cols="40">
-            </textarea>
+            <div class="input-row">
+            <div class="input-group">
+                <label>Your Name:</label>
+                <br>
+                 <input type="text" name="custname"
+                id="custname" size="30">
+            </div>
+            <div class="input-group">
+                <label for="email">Your Email Address:</label>
+                <br>
+                <input type="text" name="custemail" id="custemail" size="30">
+            </div> 
+            
+            <p>Subject of enquiry:</p>
+            
+            <textarea name="enquiries" id="enquiries"
+              rows="3" cols="40">  </textarea>
+
+            <p>Please provide details here:</p>
+
+            <textarea name="details" id="details"
+              rows="8" cols="70">  </textarea>
+
+            <p><input type="submit" value="Submit">
+         <input type="reset" value="Clear Form"></p>
+
         </form>
     </section>
 
