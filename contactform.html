@@ -1,13 +1,15 @@
-<!-- Author: Phylicia Tan,261445M. --> 
- <!DOCTYPE html>
+<!-- Author: Phylicia Tan,261445M. -->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>About us</title>
-   <style>
-    
-       
+    <title>Contact Us - JJ PLV Stationery</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Theme of website */
         :root {
             --cream: #F9F8F3;
             --teal: #183D43;
@@ -15,22 +17,16 @@
             --gold: #C2A878;
         }
 
-      
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: var(--cream);
             color: var(--teal);
             margin: 0;
-            padding: 0;
+            padding: 20px 0;
             line-height: 1.6;
         }
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-  /* name and logo of company */
+        /* Name and logo of company */
         .header {
             display: flex;
             align-items: center;
@@ -38,7 +34,7 @@
             gap: 15px;
             padding-bottom: 10px;
             border-bottom: 3px solid #f0ebe6;
-            margin-bottom: 15px;
+            margin-bottom: 25px;
         }
 
         .header img {
@@ -46,8 +42,19 @@
             border-radius: 12px;
         }
 
-       
-        nav {
+        /* The main white card container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Navigation menu style */
+         nav { 
             background-color: var(--teal);
             padding: 15px;
             text-align: center;
@@ -69,21 +76,34 @@
         nav a:hover {
             color: var(--gold);
         }
+        /* Section */
+        section {
+            max-width: 850px;
+            margin: 10px auto 20px;
+            padding: 25px 30px;
+            background-color: #f1f0ee;
+            border-radius: 12px;
+            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+        }
 </style> 
-<div class="body">
-        <div class="header">
-            <img src="logo.jpeg" alt="JJ PLV Stationery Logo" width="110">
-            <h1>JJ PLV Stationery 📚✏️</h1>
-        </div>
- <div class="container">
-        
-        <nav>
-            <a href="home page.html">Home</a>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="jjplv logo.jpeg" alt="JJ PLV Stationery Logo" width="110">
+        <h1>JJ PLV Stationery 📚✏️</h1>
+    </div>
+
+        <div class="container">
+          <nav>
+            <a href="index.html">Home</a>
             <a href="products.html">Product</a>
-            <a href="order form.html">Order Form</a>
-            <a href="about us.html">About Us</a>
-            <a href="contact us.html">Contact Us</a>
+            <a href="order.html">Order Form</a>
+            <a href="About.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
+         
     <h1>Thank you for filling out the form.</h1>
     <a href="contact.html">
         <button type="button">Back</button>
