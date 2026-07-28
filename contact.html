@@ -1,29 +1,15 @@
-<!-- Author: Phylicia Tan,261445M. --> 
+<!-- Author: Phylicia Tan,261445M. -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Contact us</title>
+    <title>Contact Us - JJ PLV Stationery</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        /* name and logo of company */
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #f0ebe6;
-            margin-bottom: 15px;
-        }
-
-        .header img {
-            width: 100px;
-            border-radius: 12px;
-        }
-
-        /* theme of website */
+        /* Theme of website */
         :root {
             --cream: #F9F8F3;
             --teal: #183D43;
@@ -31,37 +17,49 @@
             --gold: #C2A878;
         }
 
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: var(--cream);
             color: var(--teal);
             margin: 0;
-            padding: 0;
+            padding: 20px 0;
             line-height: 1.6;
         }
 
+        /* Name and logo of company */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #f0ebe6;
+            margin-bottom: 25px;
+        }
+
+        .header img {
+            width: 100px;
+            border-radius: 12px;
+        }
+
+        /* The main white card container */
         .container {
             max-width: 1000px;
             margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 25px;
+        }
 
-        }
-        /* section off */
-section {
-            max-width: 850px;
-            margin: 10px auto 10px;
-            padding: 25px 30px;
-            background-color: #f1f0ee;
-            border-radius: 12px;
-            box-shadow: 0 1px 8px rgba(0,0,0,0.05);
-        }
-        /* navigation menu style */
+        /* Navigation menu style */
         nav {
             background-color: var(--teal);
             padding: 15px;
             text-align: center;
             border-radius: 8px;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
@@ -79,39 +77,98 @@ section {
             color: var(--gold);
         }
 
-        /* Centered Form Layout */
+        /* Section */
+        section {
+            max-width: 850px;
+            margin: 10px auto 20px;
+            padding: 25px 30px;
+            background-color: #f1f0ee;
+            border-radius: 12px;
+            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Form & FAQ layout */
         .form-faq-section {
             display: flex;
-            justify-content: center;
+            gap: 40px;
+            align-items: flex-start;
             margin: 30px 0;
+            flex-wrap: wrap;
         }
 
-        .form-container {
-            width: 100%;
-            max-width: 380px; /* Made the form box smaller */
-            border: 8px double #333;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        /* Form layout */
+        .form-container,
+        .faq-container {
+            flex: 1;
+            min-width: 300px;
             background-color: #ffffff;
+            border: 2px solid var(--teal);
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            text-align: left;
         }
 
-        /* operating hours style */
+       .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container textarea {
+            width: 100%;
+            padding: 12px 15px;
+            margin-top: 6px;
+            font-size: 15px;
+            font-family: inherit;
+            border: 1.5px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            transition: border-color 0.2s ease-in-out;
+        }
+
+        .form-container input[type="text"]:focus,
+        .form-container input[type="email"]:focus,
+        .form-container textarea:focus {
+            border-color: var(--teal);
+            outline: none;
+        }
+        /* FAQ layout */
+        details {
+            background-color: var(--cream);
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        details:hover {
+            background-color: #f0ede4;
+        }
+
+        summary {
+            font-weight: bold;
+            outline: none;
+        }
+
+        details p {
+            margin: 8px 0 0 0;
+            font-size: 14px;
+            color: #444;
+        }
+
+        /* Operating hours style */
         .hours-table {
             width: 100%;
             max-width: 500px;
-            margin: 20px 0 30px 0;
+            margin: 20px auto 30px;
             border-collapse: collapse;
-            background-color: var(--box-bg);
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
             border-radius: 6px;
             overflow: hidden;
-            transition: background-color 0.3s;
         }
 
         .hours-table th,
         .hours-table td {
             padding: 12px 15px;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 1px solid #ddd;
             text-align: left;
         }
 
@@ -120,95 +177,81 @@ section {
             color: var(--cream);
             font-weight: bold;
         }
-
-        /* navigation menu */
     </style>
-    <div class="body">
-        <div class="header">
-            <img src="jjplv logo.jpeg" alt="JJ PLV Stationery Logo" width="110">
-            <h1>JJ PLV Stationery 📚✏️</h1>
-        </div>
-<head>
-      <div class="container">
-    <nav>
-        <a href="index.html">Home</a> 
-        <a href="products.html">Product</a> 
-        <a href="order.html">Order Form</a>
-        <a href="About.html">About Us</a> 
-   <a href="contact.html">Contact Us</a>
-    </nav>
-</div>
 </head>
-<section>
+
 <body>
-    <h1 style="text-align: center;">Contact Us!</h1>
-    <hr style="border: none; border-top: 2px solid #333333; opacity: 1; margin: 20px 0;" />
-    <h3>
-        <p style="text-align: center;">Have any questions or need assistance? Get in touch with us using the form below or via our email/phone
-            number.</p>
-    </h3>
 
-
-    <div class="form-faq-section">
-
-        <div class="form-container">
-            <form action="contactform.html" method="get">
-                <h2>Send us a message!</h2>
-                <p>
-                    <strong><label for="custname">Your name:</label></strong>
-                    <br>
-                    <input type="text" name="custname" id="custname" size="20" required>
-                </p>
-                <p>
-                    <strong><label for="email">E-mail:</label></strong>
-                    <br>
-                    <input type="email" name="email" id="email" placeholder="you@example.com" size="25" required>
-                </p>
-                <p>
-                    <strong><label for="notes">Message:</label></strong>
-                    <br>
-                    <textarea name="notes" id="notes" rows="5" cols="28"></textarea>
-                </p>
-                <p>
-                    <input type="submit" value="Submit form">
-                    <input type="reset" value="Clear Form">
-                </p>
-            </form>
-        </div>
-
+    <div class="header">
+        <img src="logo.jpeg" alt="JJ PLV Stationery Logo">
+        <h1>JJ PLV Stationery 📚✏️</h1>
     </div>
-    <hr style="border: none; border-top: 2px solid #333333; opacity: 1; margin: 5px 5;" />
-    <p>
-    <h2><u>Other Ways to Reach Us</u></h2>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <div style="display: flex; align-items: center; gap: 30px; font-family: sans-serif;">
+    <div class="container">
 
-        <div style="flex: 1;">
-            <i class="fas fa-envelope" style="color: #333; width: 18px;"></i>
-            <strong>Email:</strong>
-            <a href="mailto:261445M@mymail.nyp.edu.sg" target="_blank"
-                style="color: #0066cc; text-decoration: underline;">
-                JJPLV@gmail.com
-            </a>
-            <p>
-                <i class="fas fa-phone" style="color: #333; width: 18px;"></i>
-                <strong>Phone number:</strong>
-                <a href="tel:64515115" target="_blank" style="color: #0066cc; text-decoration: underline;">
-                    12345678
-                </a>
-            </p>
-            <p>
-                <i class="fas fa-map-marker-alt" style="color: #333; width: 18px;"></i>
-                <strong>Location:</strong>
-                <a href="https://www.google.com/maps/place/Nanyang+Polytechnic/@1.3799554,103.8463738,17z/data=!3m2!4b1!5s0x31da1443e96b94d1:0x87e3c8bf1134a0df!4m6!3m5!1s0x31da16eb64b0249d:0xe5f10ff680eed942!8m2!3d1.37995!4d103.8489487!16zL20vMDN4Njkz?entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D"
-                    target="_blank" style="color: #0066cc; text-decoration: underline;">
-                    180 Ang Mo Kio Ave 8, Singapore 569830
-            </p>
-            </a>
-            <p>
-                <hr style="border: none; border-top: 2px solid #333333; opacity: 1; margin: 5px 5;" />
-            </p>
+        <nav>
+            <a href="home page.html">Home</a>
+            <a href="products.html">Product</a>
+            <a href="order form.html">Order Form</a>
+            <a href="about us.html">About Us</a>
+            <a href="contact us.html">Contact Us</a>
+        </nav>
+
+        <h1>Contact Us!</h1>
+
+        <section>
+            <h3>Have any enquiries or need assistance? Get in touch with us using the form below or via our email/phone
+                number!</h3>
+
+            <div class="form-faq-section">
+
+                <div class="form-container">
+                    <form action="contactform.html" method="get">
+                        <h2><u>Send us a message!</u></h2>
+                        <p>
+                            <strong><label for="custname">Your name:</label></strong><br>
+                            <input type="text" name="custname" id="custname" size="20" required>
+                        </p>
+                        <p>
+                            <strong><label for="email">E-mail:</label></strong><br>
+                            <input type="email" name="email" id="email" placeholder="you@example.com" size="25"
+                                required>
+                        </p>
+                        <p>
+                            <strong><label for="notes">Message:</label></strong><br>
+                            <textarea name="notes" id="notes" rows="5" cols="28"></textarea>
+                        </p>
+                        <p>
+                            <input type="submit" value="Submit form">
+                            <input type="reset" value="Clear Form">
+                        </p>
+                    </form>
+                </div>
+
+                <div class="faq-container">
+                    <h2><u>Frequently Asked Questions</u></h2>
+
+                    <details>
+                        <summary>Do you offer bulk school discounts?</summary>
+                        <p>Yes! We offer up to a 20% discount for bulk classroom orders. Please get in touch with us
+                            directly via our email contact address for custom pricing.</p>
+                    </details>
+
+                    <details>
+                        <summary>How long does local shipping take?</summary>
+                        <p>Typically, processing and local delivery within Singapore takes between 2 to 4 business days
+                            once order validation is completed.</p>
+                    </details>
+
+                    <details>
+                        <summary>What payment methods do you accept?</summary>
+                        <p>We gladly support PayNow, credit/debit card payments</p>
+                    </details>
+                </div>
+
+            </div>
+        </section>
+        <section>
             <h2><u>Operating Hours</u></h2>
             <table class="hours-table">
                 <thead>
@@ -233,16 +276,44 @@ section {
                 </tbody>
             </table>
 
+        </section>
+
+        <section>
+            <h2><u>Other Ways to Reach Us</u></h2>
+
+            <div
+                style="display: flex; flex-direction: column; align-items: center; gap: 10px; font-family: sans-serif;">
+                <p>
+                    <i class="fas fa-envelope" style="color: #333; width: 18px;"></i>
+                    <strong>Email:</strong>
+                    <a href="mailto:261445M@mymail.nyp.edu.sg" target="_blank"
+                        style="color: #0066cc; text-decoration: underline;">JJPLV@gmail.com</a>
+                </p>
+                <p>
+                    <i class="fas fa-phone" style="color: #333; width: 18px;"></i>
+                    <strong>Phone number:</strong>
+                    <a href="tel:64515115" target="_blank"
+                        style="color: #0066cc; text-decoration: underline;">12345678</a>
+                </p>
+                <p>
+                    <i class="fas fa-map-marker-alt" style="color: #333; width: 18px;"></i>
+                    <strong>Location:</strong>
+                    <a href="https://www.google.com/maps/place/Nanyang+Polytechnic/@1.3799554,103.8463738,17z/data=!3m2!4b1!5s0x31da1443e96b94d1:0x87e3c8bf1134a0df!4m6!3m5!1s0x31da16eb64b0249d:0xe5f10ff680eed942!8m2!3d1.37995!4d103.8489487!16zL20vMDN4Njkz?entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank" style="color: #0066cc; text-decoration: underline;">180 Ang Mo Kio Ave 8,
+                        Singapore
+                        569830</a>
+                </p>
+        </section>
+
+
+        <div class="map-container" style="padding: 10px 20px 20px;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.661177583525!2d103.84637377530869!3d1.379955361477638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da16eb64b0249d%3A0xe5f10ff680eed942!2sNanyang%20Polytechnic!5e0!3m2!1sen!2ssg!4v1783321554643!5m2!1sen!2ssg"
+                width="100%" height="350px" style="border: 3px solid #183D43; border-radius: 8px;"></iframe>
         </div>
 
     </div>
-    <div class="map-container">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.661177583525!2d103.84637377530869!3d1.379955361477638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da16eb64b0249d%3A0xe5f10ff680eed942!2sNanyang%20Polytechnic!5e0!3m2!1sen!2ssg!4v1783321554643!5m2!1sen!2ssg"
-            width="100%" height="350px" style="border: 3px solid #183D43;">
-        </iframe>
-    </div>
-    </section>
 </body>
+</div>
 
 </html>
