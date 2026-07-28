@@ -9,7 +9,8 @@
 <body>
     <body style="background-color: #f9f8f3; 
     font-family: 
-    'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">
+    'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 20px;">
 
     <style>
 
@@ -89,6 +90,64 @@
             color: var(--gold);
         }
 
+        .tabs-container {
+            max-width: 600px;
+            margin: 20px auto;
+            font-family: sans-serif;
+        }
+
+        .product-row {
+            justify-content: right;
+        }
+
+        .input-row {
+            display:flex;
+            justify-content: center;
+            gap: 60px;
+        }
+
+            /* Hide actual radio inputs */
+        input[type="radio"] {
+            display: none;
+        }
+
+        input[class="radio2"] {
+            display:inline-block
+        }
+
+            /* Tab Bar */
+        .tab-buttons {
+         display: flex;
+         border-bottom: 2px solid #ccc;
+         justify-content: center;
+        }
+
+        .tab-btn {
+         padding: 10px 20px;
+         cursor: pointer;
+         font-size: 16px;
+         justify-content: center;
+        }
+
+            /* Hide content by default */
+        .tab-content {
+         display: none;
+         padding: 20px 0;
+        }
+
+            /* Display active content */
+        #tab1-input:checked ~ #content1,
+        #tab2-input:checked ~ #content2 {
+         display: block;
+        }
+
+            /* Highlight active tab label */
+        #tab1-input:checked ~ .tab-buttons label[for="tab1-input"],
+        #tab2-input:checked ~ .tab-buttons label[for="tab2-input"] {
+          border-bottom: 3px solid #37745fb2;
+          font-weight: bold;
+          color: #37745fb2;
+        }
     
     </style> 
     
@@ -101,63 +160,74 @@
         
         <nav>
             <a href="index.html">Home</a>
-            <a href="products.html">Product</a>
+            <a href="product.html">Product</a>
             <a href="order.html">Order Form</a>
-            <a href="About.html">About Us</a>
+            <a href="about.html">About Us</a>
             <a href="contact.html">Contact Us</a>
         </nav>
- <h1>Order Form</h1>
+        
+        <div class="tabs-container">
+  <!-- Hidden Radio Inputs -->
+  <input type="radio" id="tab1-input" name="tabs" checked>
+  <input type="radio" id="tab2-input" name="tabs">
+
+  <!-- Tab Labels -->
+  <div class="tab-buttons">
+    <label for="tab1-input" class="tab-btn">Order</label>
+    <label for="tab2-input" class="tab-btn">Feedback</label>
+  </div>
+
+  <!-- Tab Contents -->
+  <div class="tab-content" id="content1">
+  <h1>Order Form</h1>
  <p>Please select your preferred products from the selection below!</p>
 
 <!-- order form, enquires, and feedback form need to collect user info -->
     <section>
         <form>
            <div class="input-row">
-            <div class="input-group">
-                <label>Your Name:</label>
-                <br>
+                <div class="input-group">
+                    <label>Your Name:</label>
+                    <br>
                  <input type="text" name="custname"
-                id="custname" size="30">
+                 id="custname" size="25" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Your Email Address:</label>
+                    <br>
+                    <input type="text" name="custemail" id="custemail" size="25" placeholder="name@example.com" required>
+                </div> 
             </div>
-            <div class="input-group">
-                <label for="email">Your Email Address:</label>
-                <br>
-                <input type="text" name="custemail" id="custemail" size="30">
-            </div> 
 
             <form action="index.html" method="get">
  
             
 
-       <div class="product-row">
+            <div class="product-row">
                 <label for="bps_qty">
                     <input type="checkbox" name="bps_selected" value="Ballpoint Pen Set"> Ballpoint Pen Set ($3)
                 </label>
                 <input type="number" id="bps_qty" name="bps_qty" min="0" value="0">
-            </div>
 
-            <div class="product-row">
+                    <br>
                 <label for="eb_qty">
                     <input type="checkbox" name="eb_selected" value="Excercise Book"> Excercise Book ($2.50)
                 </label>
                 <input type="number" id="eb_qty" name="eb_qty" min="0" value="0">
-            </div>
 
-            <div class="product-row">
+                    <br>
                 <label for="hp_qty">
-                    <input type="checkbox" name="hp_selected" value="Highlighter Pack"> Highlighter Pack ($3)
+                    <input type="checkbox" name="hp_selected" value="Highlighter Pack"> Highlighter Pack ($2)
                 </label>
                 <input type="number" id="hp_qty" name="hp_qty" min="0" value="0">
-            </div>
-
-             <div class="product-row">
+            
+                    <br>
                 <label for="gsts_qty">
-                    <input type="checkbox" name="gsts_selected" value="Glue Stick and Tape Set"> Glue Stick and Tape Set ($2.50)
+                    <input type="checkbox" name="gsts_selected" value="Glue Stick and Tape Set"> Glue Stick & Tape Set ($2.50)
                 </label>
                 <input type="number" id="gsts_qty" name="gsts_qty" min="0" value="0">
-            </div>
-
-             <div class="product-row">
+            
+                    <br>
                 <label for="fo_qty">
                     <input type="checkbox" name="fo_selected" value="File Organisers"> File Organisers ($2)
                 </label>
@@ -175,21 +245,23 @@
 
     </form>
 </section>
+</div>
 
+    <div class="tab-content" id="content2">
     <h1>Feedback Form</h1>
     <p>Have some suggestions for us? Let us know!</p>
     <section>
         <form>
           <legend>How would you rate your experience?</legend>
-                <label><input type="radio" name="rating"
+                <label><input type="radio" class="radio2" name="rating"
                value="excellent" checked> 😍Excellent
                 </label>
 
-                <label><input type="radio" name="rating" 
+                <label><input type="radio" class="radio2" name="rating" 
                     value="average"> 😐Average 
                 </label>
 
-                <label><input type="radio" name="rating" 
+                <label><input type="radio" class="radio2" name="rating" 
                     value="poor"> 😞Poor 
                 </label>
        
@@ -205,39 +277,8 @@
          </form>
 
     </section>
-   
-    <h1>Enquires Form</h1>
-    <p>Have a question? Ask us!</p>
-    <section>
-        <form>
-            <div class="input-row">
-            <div class="input-group">
-                <label>Your Name:</label>
-                <br>
-                 <input type="text" name="custname"
-                id="custname" size="30">
-            </div>
-            <div class="input-group">
-                <label for="email">Your Email Address:</label>
-                <br>
-                <input type="text" name="custemail" id="custemail" size="30">
-            </div> 
-            
-            <p>Subject of enquiry:</p>
-            
-            <textarea name="enquiries" id="enquiries"
-              rows="3" cols="40">  </textarea>
-
-            <p>Please provide details here:</p>
-
-            <textarea name="details" id="details"
-              rows="8" cols="70">  </textarea>
-
-            <p><input type="submit" value="Submit">
-         <input type="reset" value="Clear Form"></p>
-
-        </form>
-    </section>
+   </div>
+   <h2>For any enquiries, please visit the <a href="contact.html">contact us</a> webpage!</h2>
 
 </body>
 </html>
