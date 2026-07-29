@@ -91,7 +91,7 @@
         }
 
         .tabs-container {
-            max-width: 600px;
+            max-width: 600px auto;
             margin: 20px auto;
             font-family: sans-serif;
         }
@@ -103,7 +103,7 @@
         .input-row {
             display:flex;
             justify-content: center;
-            gap: 60px;
+            gap: 30px;
         }
 
             /* Hide actual radio inputs */
@@ -160,9 +160,9 @@
         
         <nav>
             <a href="index.html">Home</a>
-            <a href="products.html">Product</a>
+            <a href="product.html">Product</a>
             <a href="order.html">Order Form</a>
-            <a href="About.html">About Us</a>
+            <a href="about.html">About Us</a>
             <a href="contact.html">Contact Us</a>
         </nav>
         
@@ -178,73 +178,74 @@
   </div>
 
   <!-- Tab Contents -->
-  <div class="tab-content" id="content1">
-  <h1>Order Form</h1>
- <p>Please select your preferred products from the selection below!</p>
+<div class="tab-content" id="content1">
+        <h1>Order Form</h1>
+        <p>Please select your preferred products from the selection below!</p>
 
-<!-- order form, enquires, and feedback form need to collect user info -->
+                <!-- order form, enquires, and feedback form need to collect user info -->
     <section>
-        <form>
-           <div class="input-row">
-                <div class="input-group">
-                    <label>Your Name:</label>
-                    <br>
-                 <input type="text" name="custname"
-                 id="custname" size="25" required>
+        <container>
+            <form>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Your Name:</label>
+                        <br>
+                        <input type="text" name="custname"
+                         id="custname" size="25" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Your Email Address:</label>
+                        <br>
+                        <input type="text" name="custemail" id="custemail" size="25" placeholder="name@example.com" required>
+                    </div> 
                 </div>
-                <div class="input-group">
-                    <label for="email">Your Email Address:</label>
-                    <br>
-                    <input type="text" name="custemail" id="custemail" size="25" placeholder="name@example.com" required>
-                </div> 
-            </div>
 
-            <form action="index.html" method="get">
+                    <form action="index.html" method="get">
  
             
 
-            <div class="product-row">
-                <label for="bps_qty">
-                    <input type="checkbox" name="bps_selected" value="Ballpoint Pen Set"> Ballpoint Pen Set ($3)
-                </label>
-                <input type="number" id="bps_qty" name="bps_qty" min="0" value="0">
+                <div class="product-row">
+                    <label for="bps_qty">
+                        <input type="checkbox" name="bps_selected" value="Ballpoint Pen Set"> Ballpoint Pen Set ($3)
+                    </label>
+                    <input type="number" id="bps_qty" name="bps_qty" min="0" value="0">
 
                     <br>
-                <label for="eb_qty">
-                    <input type="checkbox" name="eb_selected" value="Excercise Book"> Excercise Book ($2.50)
-                </label>
-                <input type="number" id="eb_qty" name="eb_qty" min="0" value="0">
+                    <label for="eb_qty">
+                        <input type="checkbox" name="eb_selected" value="Excercise Book"> Excercise Book ($2.50)
+                    </label>
+                    <input type="number" id="eb_qty" name="eb_qty" min="0" value="0">
 
                     <br>
-                <label for="hp_qty">
-                    <input type="checkbox" name="hp_selected" value="Highlighter Pack"> Highlighter Pack ($2)
-                </label>
-                <input type="number" id="hp_qty" name="hp_qty" min="0" value="0">
+                    <label for="hp_qty">
+                     <input type="checkbox" name="hp_selected" value="Highlighter Pack"> Highlighter Pack ($2)
+                    </label>
+                    <input type="number" id="hp_qty" name="hp_qty" min="0" value="0">
             
                     <br>
-                <label for="gsts_qty">
-                    <input type="checkbox" name="gsts_selected" value="Glue Stick and Tape Set"> Glue Stick & Tape Set ($2.50)
-                </label>
-                <input type="number" id="gsts_qty" name="gsts_qty" min="0" value="0">
+                    <label for="gsts_qty">
+                         <input type="checkbox" name="gsts_selected" value="Glue Stick and Tape Set"> Glue Stick & Tape Set ($2.50)
+                    </label>
+                    <input type="number" id="gsts_qty" name="gsts_qty" min="0" value="0">
             
                     <br>
-                <label for="fo_qty">
-                    <input type="checkbox" name="fo_selected" value="File Organisers"> File Organisers ($2)
-                </label>
-                <input type="number" id="fo_qty" name="fo_qty" min="0" value="0">
-            </div>
+                    <label for="fo_qty">
+                        <input type="checkbox" name="fo_selected" value="File Organisers"> File Organisers ($2)
+                    </label>
+                    <input type="number" id="fo_qty" name="fo_qty" min="0" value="0">
+          
 
-       <p>Special requests:</p>
+                    <p>Special requests:</p>
 
-        <textarea name="requests" id="requests"
-           rows="8" cols="70">
-        </textarea>
-
-     <p><input type="submit" value="Order">
-     <input type="reset" value="Clear Form"></p>
-
-    </form>
-</section>
+                 <textarea name="requests" id="requests"
+                    rows="8" cols="60">
+                 </textarea>
+                </div>
+                <p><input type="submit" value="Order">
+                <input type="reset" value="Clear Form"></p>
+            </form>
+        </container>
+    </section>
 </div>
 
     <div class="tab-content" id="content2">
