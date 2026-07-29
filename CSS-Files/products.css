@@ -73,6 +73,34 @@ table {
     overflow: hidden;
 }
 
+ img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.column {
+    width: 50%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+    }
+    .card {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 18pt;
+    }
+}
+
+
 th {
     background-color: var(--teal);
     color: white;
