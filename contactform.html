@@ -9,6 +9,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
+          /* Different devices */
+    
+        * images never overflow their box */
+img { max-width: 100%;
+height: auto; }
+/* boxes in % rather than px */
+.column { width: 50%; }
+* { box-sizing: border-box; }
+        @media (max-width: 600px) {
+/* stack the menu vertically */
+nav a { display: block; }
+/* cards become full width */
+.card { width: 100%; }
+h1 { font-size: 18pt; }
+        }
+
         /* Theme of website */
         :root {
             --cream: #F9F8F3;
