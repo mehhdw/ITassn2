@@ -4,10 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>About Us | JJ PLV</title>
+    
     <style>
-       .header {
+        :root {
+            --cream: #F9F8F3;
+            --teal: #183D43;
+            --green: #2e5a57;
+            --gold: #C2A878;
+            --black: #283824;
+        }
+
+      
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--cream);
+            color: var(--black);
+            margin: 20px;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .header {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -21,47 +39,17 @@
             width: 100px;
             border-radius: 12px;
         }
-        :root {
-            --cream: #F9F8F3;
-            --teal: #183D43;
-            --green: #2e5a57;
-            --gold: #C2A878;
-            --black: #283824;
-        }
 
-       
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            flex:1;
-            background-color: var(--cream);
-            color: var(--black);
-            margin: 20px;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-       
-          .container {
-            max-width: 1000px;
+        .container {
+            max-width: 1050px;
             margin: 0 auto;
             padding: 40px 20px;
-            background-color:gold#C2A878;
+            background-color: #ffffff;
             border-radius: 16px;  
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
             text-align: center; 
         }
-       
-         section {
-            max-width: 850px;
-            margin: 10px auto 10px;
-            padding: 25px 30px;
-            background-color: #f1f0ee;
-            border-radius: 12px;
-            box-shadow: 0 1px 8px rgba(0,0,0,0.05);
-        }
 
-      
-      
         nav {
             background-color: var(--teal);
             padding: 15px;
@@ -91,9 +79,8 @@
             letter-spacing: 1.5px;
         }
 
-       
         .content-box {
-            background: #ffffff;
+            background: #F9F8F3;
             border: 2px solid var(--green);
             border-radius: 10px;
             padding: 30px;
@@ -101,22 +88,64 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
 
-        .values-list {
-            list-style-type: none;
-            padding: 0;
+  
+        .tag-container {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 15px;
         }
 
-        .values-list li {
-            margin-bottom: 15px;
-            position: relative;
-            padding-left: 25px;
+        .tag {
+            background: #ffffff;
+            border: 1.5px solid var(--gold);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            color: var(--teal);
         }
 
-        .values-list strong {
-            color: var(--green);
+      
+        .vision-grid {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 15px;
         }
 
-         .team-container {
+        .vision-card {
+            background: var(--cream);
+            border: 1.5px solid var(--gold);
+            border-radius: 8px;
+            padding: 15px;
+            flex: 1 1 200px;
+            max-width: 260px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .vision-card h3 {
+            font-size: 28px;
+            margin: 0 0 5px 0;
+        }
+
+        .vision-card h4 {
+            color: var(--teal);
+            margin: 5px 0;
+        }
+
+        .vision-card p {
+            font-size: 13px;
+            color: #444;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+       
+       .team-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -149,19 +178,16 @@
     border: 1px solid var(--green); 
     background-color: #ffffff;
 }
+
+      
     </style>
-
 </head>
+<body>
 
-        <div class="body">
-        <div class="header">
+    <div class="header">
         <img src="jjplv logo.jpeg" alt="JJ PLV Stationery Logo" width="100" style="height: auto;">
         <h1 style="margin: 0;">JJ PLV Stationery 📚✏️</h1>
     </div>
-      </header>
-<body>
-
-<body>
 
     <div class="container">
         
@@ -173,30 +199,46 @@
             <a href="contact.html">Contact Us</a>
         </nav>
                 
-  <h1 style="text-align: center;">✨ABOUT US! ✨</h1>
+        <h1 style="text-align: center;">ABOUT US!✨</h1>
 
         <div class="content-box">
             <h2>OUR HISTORY!📜</h2>
-            <p>Founded in 2025, JJ PLV began as a shared idea among a group of students who were constantly frustrated by the lack of affordable, high-quality, and aesthetic stationery. We realized that the tools we used every day to study and create were either too expensive or lacked personality. We believe that putting pen to paper is a magical experience. Our little shop started from a simple obsession with finding some fun stationary items that are affordable. What started as a small project to design the perfect, most functional stationary quickly grew into a full-fledged business. Today, JJ PLV is proud to offer a carefully curated range of stationery designed to help you stay organized, focused, and inspired
-
-</p>
+            <p>Founded in 2025, JJ PLV began as a shared idea among a group of students who were constantly frustrated by the lack of affordable, high-quality, and aesthetic stationery. We realized that the tools we used every day to study and create were either too expensive or lacked personality. We believe that putting pen to paper is a magical experience. Our little shop started from a simple obsession with finding some fun stationary items that are affordable. What started as a small project to design the perfect, most functional stationary quickly grew into a full-fledged business. Today, JJ PLV is proud to offer a carefully curated range of stationery designed to help you stay organized, focused, and inspired.</p>
             <p>Whether you are bullet journaling, writing letters to friends, or just trying to keep your desk organized, we carefully curate and design products to bring a little joy to your everyday tasks.</p>
-        </div>
-
-        <div class="content-box">
-            <h2>OUR MISSION!🎯 </h2>
-            To banish boring desks and inspire your next big idea. At JJ PLV, we don't just sell notebooks and pens,we provide the ultimate tools for self-expression, ultimate productivity, and aesthetic focus. We curate high-quality, ultra-functional, and fun stationery that makes you actually want to sit down, study, create, and smash your goals without breaking the bank.TRUST US, you will have the best time using these stationeries!!
+        </div> <div class="content-box">
+            <h2>OUR MISSION 🎯</h2>
+            <p style="font-size: 16px; font-weight: bold; color: var(--teal); margin-bottom: 8px;">
+                To banish boring desks and inspire your next big idea!
+            </p>
+            <p style="margin: 0;">
+                We provide aesthetic, ultra-functional stationery designed for ultimate productivity, without breaking the bank.
+            </p>
+            
+            <div class="tag-container">
+                <span class="tag">✨ 100% Aesthetic</span>
+                <span class="tag">💡 High Productivity</span>
+                <span class="tag">💸 Student-Budget Approved</span>
             </div>
-                 <div class="content-box">
-             <h3>OUR VISION!🔮</h3>
-                <li><strong>Quality ✒️:</strong> Premium, resistant to bleeding and feathering, guaranteed smooth writing.</li>
-                <li><strong>Sustainability 🌱:</strong>Eco-friendly stationery delivered in 100% recyclable, plastic-free packaging.</li>
-                <li><strong>Creativity 🎨 :</strong>Aesthetic and colourful stationery crafted to inspire your everyday ideas.</li>
-      
+        </div> <div class="content-box">
+            <h2>OUR VISION! 🔮</h2>
+            <div class="vision-grid">
+                <div class="vision-card">
+                    <h3>✒️</h3>
+                    <h4>Quality</h4>
+                    <p>Premium, resistant to bleeding and feathering, guaranteed smooth writing.</p>
+                </div>
+                <div class="vision-card">
+                    <h3>🌱</h3>
+                    <h4>Sustainability</h4>
+                    <p>Eco-friendly stationery delivered in 100% recyclable, plastic-free packaging.</p>
+                </div>
+                <div class="vision-card">
+                    <h3>🎨</h3>
+                    <h4>Creativity</h4>
+                    <p>Aesthetic and colourful stationery crafted to inspire your everyday ideas.</p>
+                </div>
             </div>
-        
-
-        <div class="content-box" style="border-color: var(--teal);">
+        </div> <div class="content-box" style="border-color: var(--teal);">
             <h2 style="text-align: center;">Meet Our Team!👥🤝</h2>
             
             <div class="team-container">
@@ -204,38 +246,37 @@
                 <div class="team-card">
                     <img src="profile.jpg" alt="Phylicia" class="team-pic">
                     <h4>Phylicia</h4>
-                    <h5><p>Director of Business Strategy</p></h5>
-                    <h6>Guides company vision and direction</h6>
+                    <p><strong>Director of Business Strategy</strong></p>
+                    <small>Guides company vision and direction</small>
                 </div>
                 
                 <div class="team-card">
                     <img src="profile.jpg" alt="Victoria" class="team-pic">
                     <h4>Victoria</h4>
-                    <h5><p>Director of Operations</p></h5>
-                    <h6>Manages daily processes and systems</h6>
+                    <p><strong>Director of Operations</strong></p>
+                    <small>Manages daily processes and systems</small>
                 </div>
                 
                 <div class="team-card">
                     <img src="profile.jpg" alt="Lakshitha" class="team-pic">
                     <h4>Lakshitha</h4>
-                    <h5><p>Director of Finance</p></h5>
-                    <h6>Manages shop finances and transactions</h6>
+                    <p><strong>Director of Finance</strong></p>
+                    <small>Manages shop finances and transactions</small>
                 </div>
                 
                 <div class="team-card">
                     <img src="profile.jpg" alt="Jia Ying" class="team-pic">
                     <h4>Jia Ying</h4>
-                    <h5><p>Director of Marketing</p></h5>
-                    <h6>Promotes products and attracts customers</h6>
+                    <p><strong>Director of Marketing</strong></p>
+                    <small>Promotes products and attracts customers</small>
                 </div>
-                
 
                 <div class="team-card">
                     <img src="profile.jpg" alt="Janelle" class="team-pic">
                     <h4>Janelle</h4>
-                    <h5><p>Director of Retail Experience</p></h5>
-                    <h6>Designs customer shopping and products</h6>
+                    <p><strong>Director of Retail Experience</strong></p>
+                    <small>Designs customer shopping and products</small>
                 </div>
-            
-</body>
+
+            </div> </div> </div> </body>
 </html>
