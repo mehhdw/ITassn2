@@ -185,6 +185,7 @@
                 <!-- order form, enquires, and feedback form need to collect user info -->
     <section>
         <container>
+                  <form action="thankyou.html" method="get">
             <form>
                 <div class="input-row">
                     <div class="input-group">
@@ -198,13 +199,9 @@
                         <br>
                         <input type="email" name="email" id="email" size="25" placeholder="name@example.com" required>
                     </div> 
-                </div>
+                  </div>
 
-                    <form action="index.html" method="get">
- 
-            
-
-                <div class="product-row">
+               <div class="product-row">
                     <label for="bps_qty">
                         <input type="checkbox" name="bps_selected" value="Ballpoint Pen Set"> Ballpoint Pen Set ($3)
                     </label>
@@ -241,7 +238,7 @@
                     rows="8" cols="60">
                  </textarea>
                 </div>
-                <p><input type="submit" value="Order" a href="thankyou.html">
+                <p><input type="submit" value="Order">
                 <input type="reset" value="Clear Form"></p>
             </form>
         </container>
@@ -254,6 +251,7 @@
     <section>
      <container>  
        <form>
+             <form action="feedbackform.html" method="get">
           <legend>How would you rate your experience?</legend>
                 <label><input type="radio" class="radio2" name="rating"
                value="excellent" checked> 😍Excellent
@@ -273,7 +271,7 @@
               rows="8" cols="70" display placeholder="Your feedback helps us grow...">
             </textarea>
 
-            <p><input type="submit" value="Submit" a href="feedbackform.html">
+            <p><input type="submit" value="Submit">
          <input type="reset" value="Clear Form"></p>
 
         </form>
