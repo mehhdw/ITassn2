@@ -222,6 +222,30 @@
             transform: scale(1.08);
             background-color: var(--green); 
         }
+
+        .slideshow {
+            max-width: 100%;
+            overflow: hidden;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+        }
+
+            .slides {
+            display: flex;
+            animation: slide 8s infinite ease-in-out;
+        }
+
+            .slides img {
+                width: 100%;
+                flex-shrink: 0;
+                display: block;
+        }
+
+        @keyframes slide {
+            0%, 40% { transform: translateX(0); }
+            50%, 90% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
     </style>
         
 
@@ -250,7 +274,14 @@
             Whether you are a student, teacher, or office worker, you will find everything you need here.
         </p>
     </section>
+        
     <section>
+        <div class="slideshow">
+            <div class="slides">
+                <img src="imagesass2/nnn.png" alt="Promo 1">
+                <img src="imagesass2/hhh.png" alt="Promo 2">
+        </div>
+        </div>
         <h2>Why choose us?</h2>
          <table>
         <tr>
