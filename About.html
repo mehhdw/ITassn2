@@ -192,7 +192,14 @@
     border: 1px solid var(--green); 
     background-color: #ffffff;
 }
+.team-card, .vision-card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
 
+.team-card:hover, .vision-card:hover, .tag:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
       
     </style>
 </head>
