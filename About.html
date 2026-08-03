@@ -1,5 +1,5 @@
 <!-- Author: Vijay Govindaraj Lakshitha, 261501K-->
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,19 +8,7 @@
     <title>About Us | JJ PLV</title>
     
     <style>
-         img { 
-        max-width: 100%;
-        height: auto; }
-
-    .column { width: 50%; }
-    * { box-sizing: border-box; }
-    
-    @media (max-width: 600px) {
-        nav a { display: block; }
-
-    .card { width: 100%; }
-     h1 { font-size: 18pt; }
-        }
+   
         :root {
             --cream: #F9F8F3;
             --teal: #183D43;
@@ -29,7 +17,6 @@
             --black: #283824;
         }
 
-      
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: var(--cream);
@@ -87,7 +74,7 @@
             color: var(--gold);
         }
 
-         h2, h3 {
+        h2, h3 {
             color: var(--teal);
             text-transform: uppercase;
             letter-spacing: 1.5px;
@@ -102,7 +89,7 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
 
-  
+
         .tag-container {
             display: flex;
             gap: 10px;
@@ -119,9 +106,16 @@
             font-size: 13px;
             font-weight: bold;
             color: var(--teal);
+            transition: transform 0.2s ease, background-color 0.2s ease;
         }
 
-      
+        .tag:hover {
+            transform: scale(1.05);
+            background-color: var(--gold);
+            color: #ffffff;
+        }
+
+    
         .vision-grid {
             display: flex;
             gap: 15px;
@@ -130,16 +124,21 @@
             margin-top: 15px;
         }
 
-          .vision-card {
-    background: var(--cream);
-    border: 2px solid #8B733D; 
-    border-radius: 8px;
-    padding: 15px;
-    flex: 1 1 200px;
-    max-width: 260px;
-    text-align: center;
-    box-shadow: none; 
-}
+        .vision-card {
+            background: var(--cream);
+            border: 2px solid #8B733D; 
+            border-radius: 8px;
+            padding: 15px;
+            flex: 1 1 200px;
+            max-width: 260px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .vision-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
 
         .vision-card h3 {
             font-size: 28px;
@@ -157,52 +156,139 @@
             margin: 0;
             line-height: 1.4;
         }
-
-       
-       .team-container {
+.horizontal-history {
     display: flex;
+    gap: 15px;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center; 
     margin-top: 20px;
-    text-align: center;
 }
 
-.team-card {
+.history-card {
     background: #ffffff;
     border: 2px solid var(--gold);
-    border-radius: 8px;
-    padding: 15px;
+    border-radius: 12px;
+    padding: 20px 15px;
+    flex: 1 1 220px;
+    max-width: 280px;
     text-align: center;
-    
-  
-    flex: 0 1 calc(33.33% - 20px); 
-    min-width: 240px; 
-    
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    box-sizing: border-box; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.team-pic {
-    width: 100%; 
-    height: 150px; 
-    object-fit: contain; 
-    border-radius: 4px; 
-    margin-bottom: 10px;
-    border: 1px solid var(--green); 
-    background-color: #ffffff;
-}
-.team-card, .vision-card {
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
-}
-
-.team-card:hover, .vision-card:hover, .tag:hover {
+.history-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
 }
-      
+
+.icon-circle {
+    font-size: 26px;
+    background: var(--cream);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    border: 1.5px solid var(--gold);
+}
+
+.year-badge {
+    display: inline-block;
+    background: var(--teal);
+    color: var(--cream);
+    font-weight: bold;
+    font-size: 12px;
+    padding: 3px 12px;
+    border-radius: 15px;
+    margin-bottom: 8px;
+}
+
+.history-card h4 {
+    color: var(--teal);
+    margin: 5px 0;
+}
+
+.history-card p {
+    font-size: 13px;
+    color: #444;
+    margin: 0;
+    line-height: 1.4;
+} 
+       .stats-grid {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .stat-card {
+            background: #ffffff;
+            border: 2px solid var(--gold);
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1 1 180px;
+            max-width: 220px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .stat-card h3 {
+            font-size: 32px;
+            color: var(--teal);
+            margin: 0 0 5px 0;
+        }
+
+        .stat-card p {
+            font-size: 14px;
+            font-weight: bold;
+            color: var(--black);
+            margin: 0;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+   
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center; 
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .team-card {
+            background: #ffffff;
+            border: 2px solid var(--gold);
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            flex: 0 1 calc(33.33% - 20px); 
+            min-width: 240px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            box-sizing: border-box; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        .team-pic {
+            width: 100%; 
+            height: 150px; 
+            object-fit: contain; 
+            border-radius: 4px; 
+            margin-bottom: 10px;
+            border: 1px solid var(--green); 
+            background-color: #ffffff;
+        }
     </style>
-</head>
+    </head>
 <body>
 
     <div class="header">
@@ -220,16 +306,11 @@
             <a href="contact.html">Contact Us</a>
         </nav>
                 
-        <h1 style="text-align: center;">✨ABOUT US!✨</h1>
+        <h1 style="text-align: center;">ABOUT US!</h1>
 
         <div class="content-box">
-            <h2>OUR HISTORY!📜</h2>
-            <p style="color: #102a2e; font-weight: 500;">
-            Founded in 2025, JJ PLV began as a shared idea among a group of students who were constantly frustrated by the lack of affordable, high-quality, and aesthetic stationery. We realized that the tools we used every day to study and create were either too expensive or lacked personality. We believe that putting pen to paper is a magical experience. Our little shop started from a simple obsession with finding some fun stationary items that are affordable. What started as a small project to design the perfect, most functional stationary quickly grew into a full-fledged business. Today, JJ PLV is proud to offer a carefully curated range of stationery designed to help you stay organized, focused, and inspired.</p>
-            <p><p style="color: #102a2e; font-weight: 500;">Whether you are bullet journaling, writing letters to friends, or just trying to keep your desk organized, we carefully curate and design products to bring a little joy to your everyday tasks.</p>
-        </div> <div class="content-box">
-            <h2>OUR MISSION 🎯</h2>
-            <p style="font-size: 16px; font-weight: bold; color: var(--teal); margin-bottom: 8px;">
+            <h2>OUR MISSION! 🎯</h2>
+            <p style="font-size: 18px; font-weight: bold; color: var(--teal); margin-bottom: 8px;">
                 To banish boring desks and inspire your next big idea!
             </p>
             <p style="margin: 0;">
@@ -237,34 +318,92 @@
             </p>
             
             <div class="tag-container">
-                <span class="tag">✨ 100% Aesthetic</span>
-                <span class="tag">💡 High Productivity</span>
-                <span class="tag">💸 Student-Budget Approved</span>
+                <span class="tag"> 100% Aesthetic</span>
+                <span class="tag"> High Productivity</span>
+                <span class="tag"> Student-Budget Approved</span>
             </div>
-        </div> <div class="content-box">
-            <h2>OUR VISION! 🔮</h2>
+        </div> 
+
+        <div class="content-box">
+            <h2>OUR VISION! 🔮 </h2>
             <div class="vision-grid">
                 <div class="vision-card">
                     <h3>✒️</h3>
                     <h4>Quality</h4>
                     <p style="color: #102a2e; font-weight: 500;">
-                    Premium, resistant to bleeding and feathering, guaranteed smooth writing.</p>
+                        Premium, resistant to bleeding and feathering, guaranteed smooth writing.
+                    </p>
                 </div>
                 <div class="vision-card">
                     <h3>🌱</h3>
                     <h4>Sustainability</h4>
                     <p style="color: #102a2e; font-weight: 500;">
-                    Eco-friendly stationery delivered in 100% recyclable, plastic-free packaging.</p>
+                        Eco-friendly stationery delivered in 100% recyclable, plastic-free packaging.
+                    </p>
                 </div>
                 <div class="vision-card">
                     <h3>🎨</h3>
                     <h4>Creativity</h4>
                     <p style="color: #102a2e; font-weight: 500;">
-                    Aesthetic and colourful stationery crafted to inspire your everyday ideas.</p>
+                        Aesthetic and colourful stationery crafted to inspire your everyday ideas.
+                    </p>
                 </div>
             </div>
-        </div> <div class="content-box" style="border-color: var(--teal);">
-            <h2 style="text-align: center;">Meet Our Team!👥🤝</h2>
+        </div>
+<div class="content-box">
+    <h2>OUR HISTORY! 📜</h2>
+    
+    <div class="horizontal-history">
+        <div class="history-card">
+            <div class="icon-circle">💡</div>
+            <span class="year-badge">2025 January</span>
+            <h4>The Spark</h4>
+            <p>Founded in 2025, JJ PLV began as a shared idea among a group of students constantly frustrated by the lack of affordable, high-quality, and aesthetic stationery. We realized everyday study tools were either too expensive or lacked personality.</p>
+        </div>
+
+        <div class="history-card">
+            <div class="icon-circle">🚀</div>
+            <span class="year-badge">2025 June</span>
+            <h4>Official Launch</h4>
+            <p>JJ PLV officially opened! We believe putting pen to paper is a magical experience! What started as a simple obsession to find and design fun, functional, and affordable stationery quickly grew into a full-fledged business.</p>
+        </div>
+
+        <div class="history-card">
+            <div class="icon-circle">✨</div>
+            <span class="year-badge">2026</span>
+            <h4>Expansion</h4>
+            <p>Today, JJ PLV offers a curated range designed to keep you organized, focused, and inspired. Whether you're journaling or studying, we bring joy to your everyday tasks! Many students who use our stationery leave glowing feedback, and our monthly sales continue to grow as more people discover our products.</p>
+        
+    </div>
+ </div>
+ </div>
+
+
+
+        <div class="content-box">
+            <h2>OUR ACHIEVEMENTS! 🏆</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>3,000+</h3>
+                    <p>Happy Students </p>
+                </div>
+                <div class="stat-card">
+                    <h3>5,000+</h3>
+                    <p>Items Shipped </p>
+                </div>
+                <div class="stat-card">
+                    <h3>100%</h3>
+                    <p>Eco-Friendly Packaging </p>
+                </div>
+                <div class="stat-card">
+                    <h3>4.9 ★</h3>
+                    <p>Customer Rating </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box" style="border-color: var(--teal);">
+            <h2 style="text-align: center;">Meet Our Team! 👥</h2>
             
             <div class="team-container">
                 
@@ -303,5 +442,9 @@
                     <small><strong>Designs customer shopping and products</strong></small>
                 </div>
 
-            </div> </div> </div> </body>
+            </div> 
+        </div>
+
+
+  </div> </body>
 </html>
