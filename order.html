@@ -1,12 +1,15 @@
 <!-- Author: Victoria Ang, 261403G -->
  <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Form</title>
 </head>
+
 <body>
+
     <body style="background-color: #f9f8f3; 
     font-family: 
     'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
@@ -151,12 +154,12 @@
     
     </style> 
     
-      <div class="header">
-          <img src="jjplv logo.jpeg" alt="JJ PLV Stationery Logo" width="110">
-          <h1>JJ PLV Stationery 📚✏️</h1>
-           </div>
+    <div class="header">
+        <img src="jjplv logo.jpeg" alt="JJ PLV Stationery Logo" width="110">
+        <h1>JJ PLV Stationery 📚✏️</h1>
+    </div>
         
-<div class="container">
+    <div class="container">
         
         <nav>
             <a href="index.html">Home</a>
@@ -167,116 +170,135 @@
         </nav>
         
         <div class="tabs-container">
-  <!-- Hidden Radio Inputs -->
-  <input type="radio" id="tab1-input" name="tabs" checked>
-  <input type="radio" id="tab2-input" name="tabs">
 
-  <!-- Tab Labels -->
-  <div class="tab-buttons">
-    <label for="tab1-input" class="tab-btn">Order</label>
-    <label for="tab2-input" class="tab-btn">Feedback</label>
-  </div>
+            <!-- Hidden Radio Inputs -->
+            <input type="radio" id="tab1-input" name="tabs" checked>
+            <input type="radio" id="tab2-input" name="tabs">
 
-  <!-- Tab Contents -->
-<div class="tab-content" id="content1">
-        <h1>Order Form</h1>
-        <p>Please select your preferred products from the selection below!</p>
+            <!-- Tab Labels -->
+            <div class="tab-buttons">
+                <label for="tab1-input" class="tab-btn">Order</label>
+                <label for="tab2-input" class="tab-btn">Feedback</label>
+            </div>
+
+            <!-- Tab Contents -->
+            <div class="tab-content" id="content1">
+                
+                <h1>Order Form</h1>
+                
+                <p>Please select your preferred products from the selection below!</p>
 
                 <!-- order form, enquires, and feedback form need to collect user info -->
-    <section>
-        <container>
-         <form action="thankyou.html" method="get">
-                <div class="input-row">
-                    <div class="input-group">
-                        <label>Your Name:</label>
-                        <br>
-                        <input type="text" name="custname"
-                         id="custname" size="25" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="email">Your Email Address:</label>
-                        <br>
-                        <input type="email" name="email" id="email" size="25" placeholder="name@example.com" required>
-                    </div> 
-                 </div>
+                <section>
+                    <container>
+                        <form action="thankyou.html" method="get">
 
-               <div class="product-row">
-                    <label for="bps_qty">
-                        <input type="checkbox" name="bps_selected" value="Ballpoint Pen Set"> Ballpoint Pen Set ($3)
-                    </label>
-                    <input type="number" id="bps_qty" name="bps_qty" min="0" value="0">
+                            <div class="input-row">
 
-                    <br>
-                    <label for="eb_qty">
-                        <input type="checkbox" name="eb_selected" value="Excercise Book"> Excercise Book ($2.50)
-                    </label>
-                    <input type="number" id="eb_qty" name="eb_qty" min="0" value="0">
+                                <div class="input-group">
+                                    <label>Your Name:</label>
+                                    <br>
+                                    <input type="text" name="custname"
+                                    id="custname" size="25" required>
+                                </div>
 
-                    <br>
-                    <label for="hp_qty">
-                     <input type="checkbox" name="hp_selected" value="Highlighter Pack"> Highlighter Pack ($2)
-                    </label>
-                    <input type="number" id="hp_qty" name="hp_qty" min="0" value="0">
+                                <div class="input-group">
+                                    <label for="email">Your Email Address:</label>
+                                    <br>
+                                    <input type="email" name="email" id="email" size="25" placeholder="name@example.com" required>
+                                </div> 
+                            </div>
+
+                            <br>
+                            <div class="product-row">
+                                <label for="hp_qty">
+                                    <input type="checkbox" name="hp_selected" value="Highlighter Pack"> 10 Highlighter Pack ($2)
+                                </label>
+                                <input type="number" id="hp_qty" name="hp_qty" min="0" value="0">
+
+                                <br>
+                                <label for="bbp_qty">
+                                    <input type="checkbox" name="bbp_selected" value="Blue Ballpoint Pen"> Blue Ballpoint Pen ($1.20)
+                                </label>
+                                <input type="number" id="bbp_qty" name="bbp_qty" min="0" value="0">
+
+                                <br>
+                                <label for="bgp_qty">
+                                    <input type="checkbox" name="bgp_selected" value="Black Gel Pen"> Black Gel Pen ($1.20)
+                                </label>
+                                <input type="number" id="bgp_qty" name="bgp_qty" min="0" value="0">
+
+                                <br>
+                                <label for="fo_qty">
+                                    <input type="checkbox" name="fo_selected" value="File Organiser"> File Organiser ($3.10)
+                                </label>
+                                <input type="number" id="fo_qty" name="fo_qty" min="0" value="0">
+
+                                <br>
+                                <label for="gsts_qty">
+                                    <input type="checkbox" name="gsts_selected" value="Glue Stick and Tape Set"> Glue Stick & Tape Set ($1.90)
+                                </label>
+                                <input type="number" id="gsts_qty" name="gsts_qty" min="0" value="0">
             
-                    <br>
-                    <label for="gsts_qty">
-                         <input type="checkbox" name="gsts_selected" value="Glue Stick and Tape Set"> Glue Stick & Tape Set ($2.50)
-                    </label>
-                    <input type="number" id="gsts_qty" name="gsts_qty" min="0" value="0">
-            
-                    <br>
-                    <label for="fo_qty">
-                        <input type="checkbox" name="fo_selected" value="File Organisers"> File Organisers ($2)
-                    </label>
-                    <input type="number" id="fo_qty" name="fo_qty" min="0" value="0">
-          
+                                <br>
+                                <label for="eb_qty">
+                                    <input type="checkbox" name="eb_selected" value="Excercise Book"> Excercise Book ($2.80)
+                                </label>
+                                <input type="number" id="eb_qty" name="eb_qty" min="0" value="0">         
 
-                    <p>Special requests:</p>
+                                <p>Special requests:</p>
 
-                 <textarea name="requests" id="requests"
-                    rows="8" cols="60">
-                 </textarea>
-                </div>
-                <p><input type="submit" value="Order">
-                <input type="reset" value="Clear Form"></p>
-            </form>
-        </container>
-    </section>
-</div>
+                                <textarea name="requests" id="requests"
+                                    rows="8" cols="60">
+                                </textarea>
+                            </div>
+                            <p><input type="submit" value="Order">
+                            <input type="reset" value="Clear Form"></p>
 
-    <div class="tab-content" id="content2">
-    <h1>Feedback Form</h1>
-    <p>Have some suggestions for us? Let us know!</p>
-    <section>
-     <container>  
-       <form action="feedbackform.html" method="get">
-          <legend>How would you rate your experience?</legend>
-                <label><input type="radio" class="radio2" name="rating"
-               value="excellent" checked> 😍Excellent
-                </label>
+                        </form>
+                    </container>
+                </section>
+            </div>
 
-                <label><input type="radio" class="radio2" name="rating" 
-                    value="average"> 😐Average 
-                </label>
+            <div class="tab-content" id="content2">
 
-                <label><input type="radio" class="radio2" name="rating" 
-                    value="poor"> 😞Poor 
-                </label>
+                <h1>Feedback Form</h1>
+
+                <p>Have some suggestions for us? Let us know!</p>
+
+                <section>
+                    <container>  
+                        <form action="feedbackform.html" method="get">
+                            <legend>How would you rate your experience?</legend>
+                            <label><input type="radio" class="radio2" name="rating"
+                                value="excellent" checked> 😍Excellent
+                            </label>
+
+                            <label><input type="radio" class="radio2" name="rating" 
+                                value="average"> 😐Average 
+                            </label>
+
+                            <label><input type="radio" class="radio2" name="rating" 
+                                value="poor"> 😞Poor 
+                            </label>
        
-                <p>What did you like or dislike the most?</p>
+                            <p>What did you like or dislike the most?</p>
 
-            <textarea name="feedback" id="feedback"
-              rows="8" cols="70" display placeholder="Your feedback helps us grow...">
-            </textarea>
+                            <textarea name="feedback" id="feedback"
+                                rows="8" cols="70" display placeholder="Your feedback helps us grow...">
+                            </textarea>
 
-            <p><input type="submit" value="Submit">
-         <input type="reset" value="Clear Form"></p>
+                            <p><input type="submit" value="Submit">
+                            <input type="reset" value="Clear Form"></p>
 
-        </form>
-     </container>
-    </section>
-   </div>
-   <h2>For any enquiries, please visit the <a href="contact.html">contact us</a> webpage!</h2>
+                        </form>
+                    </container>
+                </section>
+            </div>
+        </div>
 
+        <h2>For any enquiries, please visit the <a href="contact.html">contact us</a> webpage!</h2>
+
+    </div>
 </body>
 </html>
