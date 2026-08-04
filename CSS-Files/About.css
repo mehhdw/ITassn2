@@ -292,7 +292,7 @@ img {
             border: 1px solid var(--green); 
             background-color: #ffffff;
         }
- .cta-box {
+.cta-box {
   background-color: #F9F8F3; 
   border: 2px solid var(--green);
   border-radius: 10px;
@@ -325,6 +325,11 @@ img {
   font-weight: bold;
   margin-top: 10px;
   transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.cta-button-gold:hover {
+  transform: scale(1.05);
+  background-color: var(--teal);
 }
 
 .cta-button-gold:hover {
