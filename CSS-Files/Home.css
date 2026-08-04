@@ -292,7 +292,7 @@ img {
           transition: transform 0.2s ease, background-color 0.2s ease;
         }
         
-        .cta-button-gold:hover {
+        .nextbb:hover {
           transform: scale(1.05);
           background-color: var(--teal);
         }
