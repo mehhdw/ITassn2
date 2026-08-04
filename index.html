@@ -88,6 +88,27 @@
             border-radius: 12px;
         }
 
+         .intro-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 22px;
+        }
+        .intro-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--teal);
+        }
+        .intro-item::before {
+            content: '✓';
+            color: var(--gold);
+            font-weight: bold;
+            font-size: 20px;
+        }
 
         table {
             width: 100%;
@@ -270,9 +291,13 @@
    
     <section>
         <h1>✨Welcome to JJ PLV Stationery</h1>
-        <p> At JJ PLV, we provide a wide range of high-quality stationery items at affordable prices!! 
-            Whether you are a student, teacher, or office worker, you will find everything you need here.
+        <p> At JJ PLV, we provide high-quality stationery at student-friendly prices.
+            Whether you need pens, notebooks, or supplies for school projects, we have everything you need for your studies.
         </p>
+        <div class="intro-row">
+                <div class="intro-item">High Quality</div>
+                <div class="intro-item">Affordable Price</div>
+        </div>
     </section>
 
     <section>
