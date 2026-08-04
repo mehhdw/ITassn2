@@ -242,19 +242,21 @@ img {
         }
 
     
-        .next{
-          display: inline-block;
-          background-color: var(--teal);
-          color: var(--cream);          
-          padding: 10px 24px;
-          border-radius: 20px;
-          text-decoration: none;
-          font-weight: bold;
-          margin-top: 10px;
-          transition: transform 0.2s ease, background-color 0.2s ease;
+        .next {
+            margin-top: 20px;
         }
-        
-        .next:hover {
-          transform: scale(1.05);
-          background-color: var(--teal);
+
+        .next a {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: var(--teal);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.2s ease;
+        }
+
+        .next a:hover {
+            transform: translateY(-2px);
         }
