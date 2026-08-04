@@ -267,6 +267,44 @@
             50%, 90% { transform: translateX(-100%); }
             100% { transform: translateX(0); }
         }
+
+          .footer-nav {
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 1px solid var(--border);
+        }
+        .footer-nav h3 {
+            font-size: 13px;
+            color: #999;
+            margin-bottom: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            padding: 9px 20px;
+            border: 1px solid var(--borderc);
+            border-radius: 25px;
+            color: var(--teal);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            background-color: rgba(237, 220, 190, 0.15);
+        }
+        .footer-links a:hover {
+            background-color: var(--teal);
+            color: white;
+            border-color: var(--teal);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(45, 58, 63, 0.15);
+        }
     </style>
         
 
@@ -390,10 +428,16 @@
                 </div>
             </div>
         </section>
-
-
-    <div class="next">
-        <a href="products.html">Skip to Next Page →</a>
+        
+         <div class="footer-nav">
+            <h3>All Pages</h3>
+            <div class="footer-links">
+                <a href="products.html">Products</a>
+                <a href="order.html">Order Form</a>
+                <a href="About.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
     </div>
     </div>
 
