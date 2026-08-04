@@ -222,7 +222,11 @@ img {
             flex-wrap: wrap;
             margin-top: 20px;
         }
-
+.stat-icon {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 5px;
+}
         .stat-card {
             background: #ffffff;
             border: 2px solid var(--gold);
