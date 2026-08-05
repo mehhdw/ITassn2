@@ -1,6 +1,6 @@
 <!-- Author: Victoria Ang, 261403G -->
             
-            section {
+       section {
             max-width: 850px;
             margin: 10px auto 10px;
             padding: 25px 30px;
@@ -72,6 +72,14 @@
             min-height: 60px;
         }
 
+        .column { width: 50%; }
+            * { box-sizing: border-box; }
+    
+        @media (max-width: 600px) {
+            nav a { display: block; }
+           .section { width: 100%; }
+           h1 { font-size: 18pt; }
+        }
        
         nav {
             background-color: var(--teal);
