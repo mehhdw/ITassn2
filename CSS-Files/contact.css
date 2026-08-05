@@ -1,0 +1,182 @@
+ * images never overflow their box */
+img { max-width: 100%;
+height: auto; }
+/* boxes in % rather than px */
+.column { width: 50%; }
+* { box-sizing: border-box; }
+        @media (max-width: 600px) {
+/* stack the menu vertically */
+nav a { display: block; }
+/* cards become full width */
+.card { width: 100%; }
+h1 { font-size: 18pt; }
+        }
+
+        /* Theme of website */
+        :root {
+            --cream: #F9F8F3;
+            --teal: #183D43;
+            --green: #2e5a57;
+            --gold: #C2A878;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--cream);
+            color: var(--teal);
+            margin: 0;
+            padding: 20px 0;
+            line-height: 1.6;
+        }
+
+        /* Name and logo of company */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #f0ebe6;
+            margin-bottom: 25px;
+        }
+
+        .header img {
+            width: 100px;
+            border-radius: 12px;
+        }
+
+        /* The main white card container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Navigation menu style */
+         nav { 
+            background-color: var(--teal);
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: var(--cream);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+        /* Section */
+        section {
+            max-width: 850px;
+            margin: 10px auto 20px;
+            padding: 25px 30px;
+            background-color: #f1f0ee;
+            border-radius: 12px;
+            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Form & FAQ layout */
+        * { box-sizing: border-box; }
+        .form-faq-section {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        /* Form layout */
+        .form-container,
+        .faq-container {
+            flex: 1;
+            min-width: 300px;
+            background-color: #ffffff;
+            border: 2px solid var(--teal);
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            text-align: left;
+        }
+
+       .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container textarea {
+            width: 100%;
+            padding: 12px 15px;
+            margin-top: 6px;
+            font-size: 15px;
+            font-family: inherit;
+            border: 1.5px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            transition: border-color 0.2s ease-in-out;
+        }
+
+        .form-container input[type="text"]:focus,
+        .form-container input[type="email"]:focus,
+        .form-container textarea:focus {
+            border-color: var(--teal);
+            outline: none;
+        }
+        /* FAQ layout */
+        details {
+            background-color: var(--cream);
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        details:hover {
+            background-color: #f0ede4;
+        }
+
+        summary {
+            font-weight: bold;
+            outline: none;
+        }
+
+        details p {
+            margin: 8px 0 0 0;
+            font-size: 14px;
+            color: #444;
+        }
+
+        /* Operating hours style */
+        .hours-table {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto 30px;
+            border-collapse: collapse;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .hours-table th,
+        .hours-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .hours-table th {
+            background-color: var(--teal);
+            color: var(--cream);
+            font-weight: bold;
+        }
