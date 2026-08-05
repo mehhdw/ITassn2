@@ -9,7 +9,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--cream);
     color: var(--teal);
-    margin: 20px;
+    margin: 0;
     padding: 0;
     line-height: 1.6;
 }
@@ -73,6 +73,7 @@ table {
     overflow: hidden;
 }
 
+
  img {
     max-width: 100%;
     height: auto;
@@ -107,46 +108,39 @@ section {
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
 }
 
-.Catalogue-Container {
-     display: grid;
-      grid-template-columns: repeat(2, 1fr); 
-      grid-template-rows: repeat(2, 1fr); 
-      gap: 15px;
-      width: 100%;
-      max-width: 500px; 
-      height: 400px;
-      margin: 0 auto;
+.catalogue-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    align-items: stretch; /* ensures all cards in a row have equal height */
 }
+
 
 .product-card {
     background-color: #f9f4f3;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* stack content vertically */
+    justify-content: space-between; /* push price to bottom */
+    padding: 15px;
+    height: 100%; /* stretch to match grid row height */
 }
 
-.product-image {
-    width: 100%;
-    height: 100%;
-    background-color: #b8b7b2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    object-fit: contain;
-    overflow: hidden;
+.product-image img{
+    width: 200px;      /* fixed width */
+    height: 200px;     /* fixed height */
+    object-fit: cover; /* crops image to fit nicely */
+    border-radius: 8px;
 }
 
 .product-details {
-    padding: 1.5rem;
+    flex-grow: 1; /* expands to fill space */
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    justify-content: space-between;
 }
+
 
 .product-title {
     font-size: 1.25rem;
