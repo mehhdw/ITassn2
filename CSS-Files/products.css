@@ -124,10 +124,14 @@ width: 50%;
 box-sizing: border-box; 
 }
 
-@media (max-width: 600px) {
-.card { width: 100%; }
-h1 { font-size: 18pt; }
-}
+    .column { width: 50%; }
+    * { box-sizing: border-box; }
+    
+    @media (max-width: 600px) {
+        nav a { display: block; }
+        .section { width: 100%; }
+        h1 { font-size: 18pt; }
+    }
 
 .product-card {
     background-color: #f9f4f3;
