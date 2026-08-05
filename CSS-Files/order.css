@@ -1,6 +1,4 @@
-
-            
-       section {
+ section {
             max-width: 850px;
             margin: 10px auto 10px;
             padding: 25px 30px;
@@ -59,6 +57,8 @@
             min-width: 100px;
             min-height: 60px;
             margin: 0 auto;
+            justify-content: center;
+            position: relative;
 
         }
 
@@ -73,13 +73,13 @@
         }
 
         .column { width: 50%; }
-            * { box-sizing: border-box; }
+    * { box-sizing: border-box; }
     
-        @media (max-width: 600px) {
-            nav a { display: block; }
-           .section { width: 100%; }
-           h1 { font-size: 18pt; }
-        }
+    @media (max-width: 600px) {
+        nav a { display: block; }
+        .section { width: 100%; }
+        h1 { font-size: 18pt; }
+    }
        
         nav {
             background-color: var(--teal);
@@ -162,3 +162,4 @@
           font-weight: bold;
           color: #37745fb2;
         }
+    
