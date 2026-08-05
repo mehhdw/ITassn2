@@ -112,7 +112,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
-    align-items: stretch; /* ensures all cards in a row have equal height */
+    align-items: stretch; 
 }
 
 
@@ -121,24 +121,30 @@ section {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     display: flex;
-    flex-direction: column; /* stack content vertically */
-    justify-content: space-between; /* push price to bottom */
+    flex-direction: column;
+    justify-content: space-between;
     padding: 15px;
-    height: 100%; /* stretch to match grid row height */
+    height: 100%; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border: 2px solid var(--gold); 
 }
 
 .product-image img{
-    width: 200px;      /* fixed width */
-    height: 200px;     /* fixed height */
-    object-fit: cover; /* crops image to fit nicely */
+    width: 200px; 
+    height: 200px;
+    object-fit: cover;
     border-radius: 8px;
+    transition: transform 0.3s ease;
 }
 
-.product-details {
-    flex-grow: 1; /* expands to fill space */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+    border: 2px solid var(--gold);
 }
 
 
