@@ -52,8 +52,22 @@ section {
 
         fieldset {
             border-radius: 35px;
-            width: 550px;
+            width: 75%;
+            height: 15vh;
+            min-width: 100px;
+            min-height: 60px;
             margin: 0 auto;
+
+        }
+
+        textarea {
+            border-radius: 25px;
+            padding: 10px;
+            border: 1px;
+            width: 95%;
+            height: 20vh;
+            min-width: 200px;
+            min-height: 60px;
         }
 
        
