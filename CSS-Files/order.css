@@ -1,4 +1,4 @@
-     .column { width: 50%; }
+   .column { width: 50%; }
     * { box-sizing: border-box; }
     
     @media (max-width: 600px) {
@@ -68,20 +68,20 @@
             margin: 0 auto;
             justify-content: center;
             position: relative;
+            padding: 20px;
 
         }
 
         textarea {
-            border-radius: 25px;
+            border-radius: 25px ;
             padding: 10px;
-            border: 1px;
+            border: 1px ;
             width: 95%;
             height: 20vh;
             min-width: 200px;
             min-height: 60px;
+            outline-color: #a1a09dd0;
         }
-
-   
        
         nav {
             background-color: var(--teal);
@@ -164,4 +164,3 @@
           font-weight: bold;
           color: #37745fb2;
         }
-    
