@@ -1,1 +1,93 @@
+<!Author: Phylicia Tan,261445M.>
 
+    /* Different devices */
+        /* images never overflow their box */
+img { max-width: 100%;
+height: auto; }
+/* boxes in % rather than px */
+.column { width: 50%; }
+* { box-sizing: border-box; }
+        @media (max-width: 600px) {
+/* stack the menu vertically */
+nav a { display: block; }
+/* cards become full width */
+.card { width: 100%; }
+h1 { font-size: 18pt; }
+        }
+
+        /* Theme of website */
+        :root {
+            --cream: #F9F8F3;
+            --teal: #183D43;
+            --green: #2e5a57;
+            --gold: #C2A878;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--cream);
+            color: var(--teal);
+            margin: 0;
+            padding: 20px 0;
+            line-height: 1.6;
+        }
+
+        /* Name and logo of company */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #f0ebe6;
+            margin-bottom: 25px;
+        }
+
+        .header img {
+            width: 100px;
+            border-radius: 12px;
+        }
+
+        /* The main white card container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Navigation menu style */
+         nav { 
+            background-color: var(--teal);
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: var(--cream);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+        /* Section */
+        section {
+            max-width: 850px;
+            margin: 10px auto 20px;
+            padding: 25px 30px;
+            background-color: #f1f0ee;
+            border-radius: 12px;
+            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+        }
