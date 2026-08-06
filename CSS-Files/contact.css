@@ -1,5 +1,5 @@
-<!-- Author: Phylicia Tan,261445M. -->
-* images never overflow their box */
+/* Author: Phylicia Tan, 261445M */
+/* Images never overflow their box */
 img { max-width: 100%;
 height: auto; }
 /* boxes in % rather than px */
